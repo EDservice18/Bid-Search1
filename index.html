@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bid Search + Data-Tracking</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <div class="logo">BS</div>
+      <div>
+        <h1>Bid Search</h1>
+        <p>Demo tracking dashboard</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <span class="pill pill-demo" id="demoModeBadge">Demo Mode</span>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-view="dashboard" role="tab" aria-selected="true">Dashboard</button>
+    <button class="tab" data-view="open-bids" role="tab">Open Bids</button>
+    <button class="tab" data-view="tracked-bids" role="tab">Tracked Bids</button>
+    <button class="tab" data-view="sources" role="tab">Sources</button>
+    <button class="tab" data-view="settings" role="tab">Settings</button>
+  </nav>
+
+  <main class="main">
+    <section class="view active" id="view-dashboard">
+      <div class="grid tiles" id="dashboardTiles"></div>
+      <div class="grid dashboard-cards">
+        <button class="card clickable" id="openBidsCard">
+          <h3>Open Bids</h3>
+          <p>Review current opportunities</p>
+          <span class="link">Go to Open Bids →</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="view" id="view-open-bids">
+      <div class="section-header">
+        <h2>Open Bids</h2>
+        <div class="filters">
+          <input type="text" id="filterKeyword" placeholder="Search keyword" />
+          <select id="filterCategory">
+            <option value="">All Categories</option>
+          </select>
+          <select id="filterDue">
+            <option value="">Any Due Date</option>
+            <option value="7">Due in 7 Days</option>
+            <option value="14">Due in 14 Days</option>
+            <option value="30">Due in 30 Days</option>
+          </select>
+          <select id="filterSort">
+            <option value="due">Due Soonest</option>
+            <option value="newest">Newest</option>
+            <option value="agency">Agency A–Z</option>
+          </select>
+        </div>
+      </div>
+      <div class="area-filter" id="areaFilter"></div>
+      <div class="list" id="openBidsList"></div>
+    </section>
+
+    <section class="view" id="view-tracked-bids">
+      <div class="section-header">
+        <h2>Tracked Bids</h2>
+        <div class="actions">
+          <button class="btn" id="exportCsvBtn">Export to CSV</button>
+        </div>
+      </div>
+      <div class="list" id="trackedBidsList"></div>
+    </section>
+
+    <section class="view" id="view-sources">
+      <div class="section-header">
+        <h2>Sources</h2>
+      </div>
+      <div class="sources-form">
+        <h3>Add Source</h3>
+        <div class="form-grid">
+          <input type="text" id="sourceName" placeholder="Source name" />
+          <input type="url" id="sourceUrl" placeholder="Source URL" />
+          <input type="text" id="sourceAreaTags" placeholder="Area tags (GA/NWGA/AL)" />
+          <input type="text" id="sourceKeywords" placeholder="Keywords" />
+        </div>
+        <button class="btn" id="addSourceBtn">Add Source</button>
+      </div>
+      <div class="list" id="sourcesList"></div>
+    </section>
+
+    <section class="view" id="view-settings">
+      <div class="section-header">
+        <h2>Settings</h2>
+      </div>
+      <div class="settings">
+        <label class="toggle">
+          <input type="checkbox" id="toggleDemo" checked />
+          <span>Demo Mode</span>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="toggleReal" />
+          <span>Real Search Mode</span>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="toggleLive" />
+          <span>Live Mode</span>
+        </label>
+        <p class="note" id="realModeNote" hidden>Real search requires a backend collector due to CORS.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Bid Search + Data-Tracking</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

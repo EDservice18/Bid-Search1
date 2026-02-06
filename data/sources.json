@@ -1,0 +1,72 @@
+[
+  {
+    "sourceId": "ga-proc-portal",
+    "name": "Georgia Procurement Registry",
+    "url": "https://example.gov/ga/procurement",
+    "areaTags": ["GA"],
+    "keywords": ["grounds", "parks", "maintenance"]
+  },
+  {
+    "sourceId": "nwga-cities",
+    "name": "Northwest GA City Bids",
+    "url": "https://example.gov/nwga/cities",
+    "areaTags": ["NWGA"],
+    "keywords": ["mowing", "turf", "landscaping"]
+  },
+  {
+    "sourceId": "rome-utilities",
+    "name": "Rome Utilities Procurement",
+    "url": "https://example.gov/rome/utilities",
+    "areaTags": ["NWGA"],
+    "keywords": ["right-of-way", "brush cutting"]
+  },
+  {
+    "sourceId": "carrollton-bids",
+    "name": "Carrollton Bid Board",
+    "url": "https://example.gov/carrollton/bids",
+    "areaTags": ["NWGA"],
+    "keywords": ["cemetery", "lawn care"]
+  },
+  {
+    "sourceId": "heard-county",
+    "name": "Heard County Purchasing",
+    "url": "https://example.gov/heard/purchasing",
+    "areaTags": ["GA"],
+    "keywords": ["grounds", "debris cleanup"]
+  },
+  {
+    "sourceId": "alabama-procurement",
+    "name": "Alabama Procurement Portal",
+    "url": "https://example.gov/alabama/procurement",
+    "areaTags": ["AL"],
+    "keywords": ["parks", "maintenance", "right-of-way"]
+  },
+  {
+    "sourceId": "centre-bids",
+    "name": "Centre City Bids",
+    "url": "https://example.gov/centre/bids",
+    "areaTags": ["AL"],
+    "keywords": ["mowing", "brush cutting"]
+  },
+  {
+    "sourceId": "cedar-bluff",
+    "name": "Cedar Bluff Procurement",
+    "url": "https://example.gov/cedarbluff/procurement",
+    "areaTags": ["AL"],
+    "keywords": ["lawn care", "weed eating"]
+  },
+  {
+    "sourceId": "state-parks-ga",
+    "name": "GA State Parks Notices",
+    "url": "https://example.gov/ga/parks",
+    "areaTags": ["GA"],
+    "keywords": ["parks", "grounds maintenance"]
+  },
+  {
+    "sourceId": "regional-transpo",
+    "name": "Regional Transportation District",
+    "url": "https://example.gov/regional/transportation",
+    "areaTags": ["GA", "AL"],
+    "keywords": ["right-of-way", "debris cleanup"]
+  }
+]
